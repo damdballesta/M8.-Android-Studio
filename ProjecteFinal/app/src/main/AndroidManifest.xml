@@ -21,7 +21,15 @@
 
         <activity android:name=".CalendariActivity" />
         <activity android:name=".BuscarActivity" />
-        <activity android:name=".NotesActivity" />
+        <activity android:name=".NotesActivity"/>
+
+        <activity android:name=".EditaNotaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
         <activity android:name=".AgendaActivity" />
         <activity android:name=".GaleriaActivity" />
 
