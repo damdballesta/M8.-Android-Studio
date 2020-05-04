@@ -6,7 +6,7 @@
     android:id="@+id/activity_edita_nota"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditaNotaActivity">
+    tools:context=".Nota_Edit_Activity">
 
 
     <View

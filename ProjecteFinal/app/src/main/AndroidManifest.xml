@@ -20,10 +20,11 @@
         </activity>
 
         <activity android:name=".CalendariActivity" />
-        <activity android:name=".BuscarActivity" />
+        <activity android:name=".Fitxa_Edit_Activity" />
+        <activity android:name=".FitxesActivity"/>
         <activity android:name=".NotesActivity"/>
 
-        <activity android:name=".EditaNotaActivity">
+        <activity android:name=".Nota_Edit_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />

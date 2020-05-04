@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.CalendarView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -62,20 +61,20 @@ public class NotesActivity extends AppCompatActivity {
     }
 
     private void onEditaNota(int pos) {
-        Intent intent = new Intent(this, EditaNotaActivity.class);
+        Intent intent = new Intent(this, Nota_Edit_Activity.class);
         intent.putExtra("pos", pos);
         startActivityForResult(intent, EDITA_NOTA);
     }
 
     public void onNuevaNota(View view) {
-        Intent intent = new Intent(this, EditaNotaActivity.class);
+        Intent intent = new Intent(this, Nota_Edit_Activity.class);
         startActivityForResult(intent, NUEVA_NOTA);
     }
 
     private class NotasAdapter extends ArrayAdapter<Nota> {
         NotasAdapter() {
             super(NotesActivity.this, R.layout.item_lista_notas,
-                    ListaNotas.get());
+                    Notas_Llista.get());
         }
 
 

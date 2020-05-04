@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         fitxes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentFitxes = new Intent(MainActivity.this, BuscarActivity.class);
+                Intent intentFitxes = new Intent(MainActivity.this, FitxesActivity.class);
                 startActivity(intentFitxes);
             }
         });
